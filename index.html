@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WestCOL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="profile-main">
+        <div class="profile-header">
+            <div class="user-detail">
+                <div class="user-image">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfah5j0L4T9ylSlYBG9BPNEN94Ww86aZ_OVFypHkH9WWpsN2mOy5m4w9o8WFoE10-6I3DRtY71Ny4KEKQspHWNNW_XgKkuXh-NRSs3KRTE3-O3KNKed1N8uzzM_m_N_ZlDH0ti5XJk1j3Ge_BYgBLHFGrnULAbJ4ZFwMlJNsnFDWTjU8Ue7IF_6ha4/s1600/199024082_504349514332552_776225253311372223_n.jpg">
+                </div>
+                <div class="user-data">
+                    <h2>WestCOL</h2>
+                    <span class="post-label">Streamer</span>
+                    <span class="post-label">Youtuber</span>
+                    <p>Streamer colombiano TOP <strong>#1</strong> <br>
+                    </p>
+                </div>
+                <div class="social-icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitch"></i>    
+                </div>
+            </div>
+            <div class="tab-panel-main">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="Basic-detail">¿Quien soy?</li>
+                    <li class="tab-link" data-tab="Edu-detail">Stream Fighters</li>
+                </ul>
+                <div id="Basic-detail" class="tab-content current">
+                    <div class="skill-box">
+                        <ul>
+                            <li><strong>Mis plataformas de trabajo:</strong></li>
+                            <li>Twitch (967.2K Seguidores) <li>Instagram (983K Seguidores)</li>
+                        </ul>
+                    </div>
+                    <div class="bio-box">
+                        <div class="heading">
+                            <p>Resumen
+                                <label>Streamer</label>
+                            </p>
+                        </div>
+                        <div class="desc">
+                            WestCOL es un creador de contenido digital en el cual su contenido se basa en hablar problemas y temas de la socedad, contar storytimes y algunas veces jugar o apostar en un casino online. Recientemente hizo el mayor evento en la comunidad de creación de contenido colombiana llamado Stream Fighters. Tambien ha colaborado con marcas internacionales tales como PUBG, MercadoLibre y Budweiser
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <p>Detalles personales</p>
+                        <ul class="ul-first">
+                            <li>Nac.</li>
+                            <li>Ciudad</li>
+                            <li>Pais</li>
+                            <li>Cont</li>
+                        </ul>
+                        <ul class="ul-second">
+                            <li>Diciembre 24</li>
+                            <li>Medellín</li>
+                            <li>Colombia</li>
+                            <li>@carlosvbarrueco</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="Edu-detail" class="tab-content">
+                    <div class="Edu-box-main">
+                        <h2>Stream Fighters</h2>
+                        <div class="Edu-box">
+                            <h5><span>¿Que fue?</span> <br></h5>
+                            <p>Stream Fighters fue un evento creado orginalmente por WestCOL en el cual unos ceadores de contenido tanto como hombres y mujeres fueron invitados a participar de una velada de boxeo en la cual podian demostrar quien era el mas fuerte. Este evento llego a lograr unos records nunca antes vistos en la comunidad colombiana tales como +140k espectadores simultaneos</p>
+                        </div>
+                        <div class="Edu-box">
+                            <h5><span>Importancia</span> <br></h5>
+                            <p>La importancia de este evento fue que se pudo unir la comunidad colombiana que estaba muy separada por polemicas y peleas, tambien el mundo se dio cuenta de que la comunidad tanto colombiana como latina son capaces de hacer eventos de talla similar a los Europeos como Ibai  </p>
+                        </div>
+                    </div>
+                </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="footer">
+            <p><strong>Mis redes sociales</strong></p><br>
+            <div class="footer-box"><i class="fa fa-facebook"></i></div>
+            <div class="footer-box"><i class="fa fa-twitter"></i></div>
+            <div class="footer-box"><i class="fa fa-twitch"></i></div>
+            <div class="footer-box"><i class="fa fa-instagram"></i></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('ul.tabs li').click(function () {
+                var tab_id = $(this).attr('data-tab');
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            });
+        });
+    </script>
+</body>
+
+</html>
